@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object Demo</title>
+</head>
+<body>
+
+<h2>JavaScript Object Example</h2>
+<button onclick="showDetails()">Show Details</button>
+
+<p id="output"></p>
+
+<script>
+function showDetails() {
+  // Creating an object
+  let student = {
+    name: "Rahul",
+    age: 20,
+    course: "BCA"
+  };
+
+  // Displaying object values
+  document.getElementById("output").innerHTML =
+    "Name: " + student.name + "<br>" +
+    "Age: " + student.age + "<br>" +
+    "Course: " + student.course;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM Manipulation</title>
+</head>
+<body>
+
+<h2 id="title">Original Heading</h2>
+<p class="para">Original Paragraph</p>
+
+<button onclick="changeContent()">Change Content</button>
+
+<script>
+function changeContent() {
+  // Using getElementById
+  document.getElementById("title").innerHTML = "Heading Changed!";
+
+  // Using querySelector
+  document.querySelector(".para").innerHTML =
+    "Paragraph text changed using DOM manipulation.";
+}
+</script>
+
+</body>
+</html>

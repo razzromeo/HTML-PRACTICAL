@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Overflow</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .box {
+            width: 200px;
+            height: 120px;
+            background-color: white;
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+        }
+
+        .hidden {
+            overflow: hidden;
+        }
+
+        .scroll {
+            overflow: scroll;
+        }
+
+        .auto {
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Overflow Property</h1>
+
+    <div class="container">
+
+        <div class="box hidden">
+            <b>Hidden</b><br>
+            This is a long content that will overflow the box but will be hidden.
+        </div>
+
+        <div class="box scroll">
+            <b>Scroll</b><br>
+            This is a long content that will overflow the box and show scrollbars.
+        </div>
+
+        <div class="box auto">
+            <b>Auto</b><br>
+            This is a long content that will overflow the box and show scrollbar only if needed.
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+</head>
+<body>
+
+<h2>Form Validation using JavaScript</h2>
+
+<form onsubmit="return validateForm()">
+  Name: <input type="text" id="name" oninput="checkInput()"><br><br>
+  Age: <input type="number" id="age"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function checkInput() {
+  let name = document.getElementById("name").value;
+  if (name.length > 0) {
+    alert("Input detected!");
+  }
+}
+
+function validateForm() {
+  let name = document.getElementById("name").value;
+  let age = document.getElementById("age").value;
+
+  if (name === "" || age === "") {
+    alert("All fields are required");
+    return false;
+  }
+
+  alert("Form submitted successfully!");
+  return true;
+}
+</script>
+
+</body>
+</html>

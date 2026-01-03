@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Events</title>
+</head>
+<body>
+
+<h2>JavaScript Events Example</h2>
+
+<button onclick="clickEvent()">Click Me</button>
+<br><br>
+
+<p onmouseover="mouseOver()" onmouseout="mouseOut()" id="text">
+  Move mouse over this text
+</p>
+
+<script>
+function clickEvent() {
+  alert("Button clicked!");
+}
+
+function mouseOver() {
+  document.getElementById("text").innerHTML = "Mouse is over the text";
+}
+
+function mouseOut() {
+  document.getElementById("text").innerHTML = "Move mouse over this text";
+}
+</script>
+
+</body>
+</html>
